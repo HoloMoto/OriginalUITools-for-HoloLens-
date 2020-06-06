@@ -6,13 +6,15 @@ using Microsoft.MixedReality.Toolkit.UI;
 public class DialUIforHoloLens: MonoBehaviour
 {
     //target interactable.cs
-    public Interactable inter;
+    Interactable inter;
 
     //Action On/Off
-    public bool _ActionEnebled;
-
+    bool _ActionEnebled;
     //transform
     Vector3 dpos;
+
+    public Theme InteractableStates;
+
     private void Start()
     {
         inter = this.gameObject.GetComponent<Interactable>();
@@ -26,28 +28,30 @@ public class DialUIforHoloLens: MonoBehaviour
             // x axis input is pluse value 
 
             
-            bool resultyx = dpos.normalized.y > dpos.normalized.x;
-            if (resultyx && dpos.y>0)
-            {
-                  Result_Yp();
-            }
-            if (resultyx && 0 > dpos.y)
-            {
-                Result_Xm();
-            }
-            if (!resultyx && dpos.x>0)
-            {
-                Result_Xp();
-            }
-            if(!resultyx && 0>dpos.x)
-            {
-                Result_Ym();
-            }
-            resultyx = dpos.normalized.y > dpos.normalized.x;
+            bool result = System.Math.Abs(dpos.y) > System.Math.Abs(dpos.x);
+            bool resulty = dpos.y>0;
+            bool resultx = dpos.x> 0;
+               if(result && resulty)
+               {
+                     Result_Yp();
+               }
+               if (result && !resulty)
+               {
+                    Result_Ym();
+               }
+               if (!result && resultx)
+               {
+                    Result_Xp();
+               }
+               if(!result && !resultx )
+               {
+                    Result_Xm();
+               }
+            
 
 
         }
-  
+
     }
 
     void Result_Yp()
