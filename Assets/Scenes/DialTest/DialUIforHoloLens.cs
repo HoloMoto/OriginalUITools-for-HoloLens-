@@ -7,6 +7,7 @@ using Microsoft.MixedReality.Toolkit.UI;
 [RequireComponent(typeof(Interactable))]
 public class DialUIforHoloLens: MonoBehaviour
 {
+    [Header("OnUpdateEvent")]
     /// <summary>
     /// The event that occurs when the target is moved to the right
     /// </summary>
@@ -17,6 +18,17 @@ public class DialUIforHoloLens: MonoBehaviour
     public UnityEvent OnUpdateUpAxisEvent;
 
     public UnityEvent OnUpdateDownAxisEvent;
+
+    [Header("OnRereasedEvent")]
+
+    public UnityEvent OnRereasedRightAxisEvent;
+
+    public UnityEvent OnRereasedLeftAxisEvent;
+
+    public UnityEvent OnRereasedUpAxisEvent;
+
+    public UnityEvent OnRereasedDownAxisEvent;
+
     //target interactable.cs
     Interactable inter;
 
@@ -34,8 +46,13 @@ public class DialUIforHoloLens: MonoBehaviour
     bool _OnUpdateleftAxisEvent = true;
     bool _OnUpdateupperAxisEvent = true;
     bool _OnUpdatedownAxisEvent = true;
-   //transform
-   Vector3 dpos;
+    //Action States
+    bool _Updatexp =false;
+    bool _Updateyp = false;
+    bool _Updatexm = false;
+    bool _Updateym = false;
+    //transform
+    Vector3 dpos;
     
 
     private void Start()
@@ -59,8 +76,8 @@ public class DialUIforHoloLens: MonoBehaviour
    
                if(!resultx && !resulty)
                {
-                  return;
-               }
+                UpdateStatus(false, false, false, false);
+            }
 
                if(result && resulty)
                {
@@ -107,27 +124,40 @@ public class DialUIforHoloLens: MonoBehaviour
 
     void Result_Yp(float yaxis)
     {
-        //Debug.Log("Y Axis");  
+        UpdateStatus(true,false,false,false);
     }
     void Result_Ym(float yaxis)
     {
-        //Debug.Log("-Y Axis");
+        UpdateStatus(false, true, false, false);
     }
     void Result_Xp(float xaxis)
     {
-        //Debug.Log("X Axis");
+        UpdateStatus(false, false, true, false);
     }
     void Result_Xm(float xaxis)
     {
-       // Debug.Log("-X Axis");
+        UpdateStatus(false, false, false, true);
     }
-
+    /// <summary>
+    /// 現在のアクションのステータスをbool型で格納
+    /// </summary>
+    /// <param name="yp">Y＝up</param>
+    /// <param name="ym">-Y=down</param>
+    /// <param name="xp">x=right</param>
+    /// <param name="xm">-x=left</param>
+    void UpdateStatus(bool yp,bool ym,bool xp,bool xm)
+    {
+         _Updateyp = yp;
+         _Updateym = ym;
+         _Updatexp = xp;
+         _Updatexm = xm;
+    }
     /// <summary>
     /// 
     /// </summary>
     void reslutRightAxisEvent()
     {
-        Debug.Log("Right");
+        //Debug.Log("Right");
         OnUpdateRightAxisEvent.Invoke();
     }
     /// <summary>
@@ -135,19 +165,19 @@ public class DialUIforHoloLens: MonoBehaviour
     /// </summary>
     void resultLeftAxisEvent()
     {
-        Debug.Log("Left");
+        //Debug.Log("Left");
         OnUpdateLeftAxisEvent.Invoke();
     }
 
     void reslutUpperAxisEvent()
     {
-        Debug.Log("Up");
+        //Debug.Log("Up");
         OnUpdateUpAxisEvent.Invoke();
     }
 
     void reslutDownAxisEvent()
     {
-        Debug.Log("Down");
+       // Debug.Log("Down");
         OnUpdateDownAxisEvent.Invoke();
     }
 
@@ -166,9 +196,27 @@ public class DialUIforHoloLens: MonoBehaviour
     {
         Debug.Log("pointerAnimationEnd");
         _ActionEnebled = false;
+        if (_Updateyp)
+        {
+            OnRereasedUpAxisEvent.Invoke();
+        }
+        if (_Updateym)
+        {
+            OnRereasedDownAxisEvent.Invoke();
+        }
+        if (_Updatexp)
+        {
+            OnRereasedRightAxisEvent.Invoke();
+        }
+        if (_Updatexm)
+        {        
+            OnRereasedLeftAxisEvent.Invoke();
+        }
         //Reset trigger
         _OnUpdaterightAxisEvent = true;
         _OnUpdateleftAxisEvent = true;
+        _OnUpdateupperAxisEvent = true;
+        _OnUpdatedownAxisEvent = true;
     }
     /// <summary>
     /// This method call by ManipulationHundeler OnManiputationEnded.
