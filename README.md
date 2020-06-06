@@ -1,4 +1,4 @@
-# UITools for MRTK
+# UITools for HoloLens
 
 
 
