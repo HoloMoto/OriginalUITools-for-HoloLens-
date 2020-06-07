@@ -36,10 +36,10 @@ public class DialUIforHoloLens: MonoBehaviour
     /// Radius to recognize the input
     /// </summary>
     [SerializeField, TooltipAttribute("Radius to recognize the input")]
-    [Range(0,1)]
+    [Range(0,10)]
     public float MinRange = 0.3f;
 
-    public float MaxRange = 1.0f;
+   // public float MaxRange = 1.0f;
     //Action On/Off
     bool _ActionEnebled;
     bool _OnUpdaterightAxisEvent =true;
@@ -73,13 +73,17 @@ public class DialUIforHoloLens: MonoBehaviour
             bool result = System.Math.Abs(dpos.y) > System.Math.Abs(dpos.x);
             bool resulty = dpos.y>MinRange;
             bool resultx = dpos.x> MinRange;
-   
-               if(!resultx && !resulty)
-               {
-                UpdateStatus(false, false, false, false);
-            }
+            bool resultabsy = yaxisparm > MinRange;
+            bool resultabsx = xaxisparm > MinRange;
 
-               if(result && resulty)
+            Debug.Log(resultabsx);
+
+               if (!resultx && !resulty)
+               {
+                //  UpdateStatus(false, false, false, false);
+               }
+
+               if(result && resulty && resultabsy)
                {
                      Result_Yp(yaxisparm);
                 if (_OnUpdateupperAxisEvent)
@@ -89,7 +93,7 @@ public class DialUIforHoloLens: MonoBehaviour
                 }
             }
 
-               if (result && !resulty)
+               if (result && !resulty &&  resultabsy)
                {
                     Result_Ym(yaxisparm);
                 if (_OnUpdatedownAxisEvent)
@@ -99,7 +103,7 @@ public class DialUIforHoloLens: MonoBehaviour
                 }
             }
 
-               if (!result && resultx)
+               if (!result && resultx && resultabsx)
                {
                     Result_Xp(xaxisparm);
                 if (_OnUpdaterightAxisEvent) 
@@ -109,11 +113,12 @@ public class DialUIforHoloLens: MonoBehaviour
                 }
                }
 
-               if(!result && !resultx )
+               if(!result && !resultx && resultabsx)
                {
                     Result_Xm(xaxisparm);
                 if (_OnUpdateleftAxisEvent)
                 {
+                    Debug.Log("test");
                     resultLeftAxisEvent();
                     _OnUpdateleftAxisEvent = false;
                 }
@@ -226,6 +231,6 @@ public class DialUIforHoloLens: MonoBehaviour
         //Pointer Transform Reset
         Debug.Log("PointerReset");
         this.gameObject.transform.localPosition = new Vector3(0, 0, 0);
-        this.gameObject.transform.localRotation = new Quaternion(1, 0, 0, 1);
+        //this.gameObject.transform.localRotation = new Quaternion(1, 0, 0, 1);
     }
 }
