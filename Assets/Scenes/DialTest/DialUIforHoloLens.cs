@@ -29,9 +29,6 @@ public class DialUIforHoloLens: MonoBehaviour
 
     public UnityEvent OnRereasedDownAxisEvent;
 
-    //target interactable.cs
-    Interactable inter;
-
     /// <summary>
     /// Radius to recognize the input
     /// </summary>
@@ -57,20 +54,20 @@ public class DialUIforHoloLens: MonoBehaviour
 
     private void Start()
     {
-        inter = this.gameObject.GetComponent<Interactable>();
+       
     }
     // Update is called once per frame
     void Update()
     {
         if (_ActionEnebled)
         {
+            //delta Position
             dpos = this.gameObject.transform.localPosition;
-            // x axis input is pluse value 
 
             float yaxisparm = System.Math.Abs(dpos.y);
             float xaxisparm = System.Math.Abs(dpos.x);
 
-            bool result = System.Math.Abs(dpos.y) > System.Math.Abs(dpos.x);
+            bool result = yaxisparm > xaxisparm;
             bool resulty = dpos.y>MinRange;
             bool resultx = dpos.x> MinRange;
             bool resultabsy = yaxisparm > MinRange;
