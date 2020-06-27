@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/DialTest/DialTest.unity
+    path: Assets/UITools/Experimental/DialTest/DialTest.unity
     guid: 7f52aa96f8a662947b8d191d12761f8e
   m_configObjects: {}
