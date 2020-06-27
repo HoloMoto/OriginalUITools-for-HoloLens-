@@ -1,0 +1,112 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Apps\\HoloMotoTools\\Assets\\HoloMotoTools.Dependencies.msb4u.csproj": {}
+  },
+  "projects": {
+    "D:\\Apps\\HoloMotoTools\\Assets\\HoloMotoTools.Dependencies.msb4u.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Apps\\HoloMotoTools\\Assets\\HoloMotoTools.Dependencies.msb4u.csproj",
+        "projectName": "HoloMotoTools.Dependencies.msb4u",
+        "projectPath": "D:\\Apps\\HoloMotoTools\\Assets\\HoloMotoTools.Dependencies.msb4u.csproj",
+        "packagesPath": "C:\\Users\\Holomoto\\.nuget\\packages\\",
+        "outputPath": "D:\\Apps\\HoloMotoTools\\MSBuild\\Output\\obj\\Dependencies\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "D:\\Apps\\HoloMotoTools\\Assets\\NuGet.Config",
+          "C:\\Users\\Holomoto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/UnityDeveloperTools/MSBuildForUnity/_packaging/UnityDeveloperTools/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "projectReferences": {
+              "D:\\Apps\\HoloMotoTools\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj": {
+                "projectPath": "D:\\Apps\\HoloMotoTools\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj",
+                "privateAssets": "analyzers"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "dependencies": {
+            "MSBuildForUnity": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "Analyzers",
+              "target": "Package",
+              "version": "[0.9.1-*, 0.9.1]"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Apps\\HoloMotoTools\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Apps\\HoloMotoTools\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj",
+        "projectName": "DotNetAdapter",
+        "projectPath": "D:\\Apps\\HoloMotoTools\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\DotNetAdapter.csproj",
+        "packagesPath": "C:\\Users\\Holomoto\\.nuget\\packages\\",
+        "outputPath": "D:\\Apps\\HoloMotoTools\\Assets\\MRTK\\Providers\\WindowsMixedReality\\Shared\\DotNetAdapter\\.obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "D:\\Apps\\HoloMotoTools\\Assets\\NuGet.Config",
+          "C:\\Users\\Holomoto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/UnityDeveloperTools/MSBuildForUnity/_packaging/UnityDeveloperTools/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "dependencies": {
+            "Microsoft.Windows.MixedReality.DotNetWinRT": {
+              "suppressParent": "Analyzers",
+              "target": "Package",
+              "version": "[0.5.1049, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
