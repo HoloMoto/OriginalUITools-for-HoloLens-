@@ -9,7 +9,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Forcus
+    m_ConditionEvent: Pressed
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1193131771340213755}
@@ -83,7 +83,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -2934532837846363649}
-    m_Position: {x: 239.65204, y: 258.5531, z: 0}
+    m_Position: {x: 240, y: 260, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1193131771340213755}
     m_Position: {x: 636.3553, y: 335.10992, z: 0}
@@ -136,7 +136,7 @@ AnimatorController:
   m_Name: UIControllerArrow
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Forcus
+  - m_Name: Pressed
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
