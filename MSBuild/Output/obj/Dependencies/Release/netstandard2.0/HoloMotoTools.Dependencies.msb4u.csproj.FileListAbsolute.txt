@@ -1,2 +1,13 @@
 D:\PlayGround\HoloMotoOriginalUI\OriginalUITools-for-HoloLens-\Assets\Dependencies\netstandard2.0\HoloMotoTools.Dependencies.msb4u.deps.json
 D:\PlayGround\HoloMotoOriginalUI\OriginalUITools-for-HoloLens-\MSBuild\Output\obj\Dependencies\Release\netstandard2.0\HoloMotoTools.Dependencies.msb4u.csprojAssemblyReference.cache
+D:\PlayGround\HoloMotoOriginalUI\OriginalUITools-for-HoloLens-\Assets\Dependencies\netstandard2.0\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Editor.asmdef
+D:\PlayGround\HoloMotoOriginalUI\OriginalUITools-for-HoloLens-\Assets\Dependencies\netstandard2.0\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Editor.asmdef.meta
+D:\PlayGround\HoloMotoOriginalUI\OriginalUITools-for-HoloLens-\Assets\Dependencies\netstandard2.0\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Init.cs
+D:\PlayGround\HoloMotoOriginalUI\OriginalUITools-for-HoloLens-\Assets\Dependencies\netstandard2.0\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Init.cs.meta
+D:\PlayGround\HoloMotoOriginalUI\OriginalUITools-for-HoloLens-\Assets\Dependencies\netstandard2.0\Microsoft.Windows.MixedReality.DotNetWinRT\x64\MonoSupport.dll
+D:\PlayGround\HoloMotoOriginalUI\OriginalUITools-for-HoloLens-\Assets\Dependencies\netstandard2.0\Microsoft.Windows.MixedReality.DotNetWinRT\x64\MonoSupport.dll.meta
+D:\PlayGround\HoloMotoOriginalUI\OriginalUITools-for-HoloLens-\Assets\Dependencies\netstandard2.0\Microsoft.Windows.MixedReality.DotNetWinRT.dll.meta
+D:\PlayGround\HoloMotoOriginalUI\OriginalUITools-for-HoloLens-\Assets\Dependencies\netstandard2.0\System.Drawing.Primitives.dll.meta
+D:\PlayGround\HoloMotoOriginalUI\OriginalUITools-for-HoloLens-\Assets\Dependencies\netstandard2.0\Microsoft.Windows.MixedReality.DotNetWinRT.dll
+D:\PlayGround\HoloMotoOriginalUI\OriginalUITools-for-HoloLens-\Assets\Dependencies\netstandard2.0\System.Drawing.Primitives.dll
+D:\PlayGround\HoloMotoOriginalUI\OriginalUITools-for-HoloLens-\MSBuild\Output\obj\Dependencies\Release\netstandard2.0\HoloMotoTools.Dependencies.msb4u.csproj.CopyComplete
