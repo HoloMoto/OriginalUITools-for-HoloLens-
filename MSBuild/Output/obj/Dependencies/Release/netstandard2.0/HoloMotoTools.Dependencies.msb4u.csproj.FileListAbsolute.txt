@@ -1,0 +1,2 @@
+D:\PlayGround\HoloMotoOriginalUI\OriginalUITools-for-HoloLens-\Assets\Dependencies\netstandard2.0\HoloMotoTools.Dependencies.msb4u.deps.json
+D:\PlayGround\HoloMotoOriginalUI\OriginalUITools-for-HoloLens-\MSBuild\Output\obj\Dependencies\Release\netstandard2.0\HoloMotoTools.Dependencies.msb4u.csprojAssemblyReference.cache
