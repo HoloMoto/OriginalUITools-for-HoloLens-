@@ -22,7 +22,7 @@ https://www.youtube.com/watch?v=-UEzbbM8wvU
 
  
 
- ・Mixed Reality Toolkit v2.2.0
+ ・Mixed Reality Toolkit v2.5
 
  
 
