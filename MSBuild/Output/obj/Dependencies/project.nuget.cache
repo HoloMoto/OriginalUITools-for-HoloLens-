@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Gu7cgwES8Merhz0+XSPuKJEfrYFzGX4Ck2INoBDBiVC1jroHs6t8DTBDTm6smfQiqUD6r3DpR3NvU2imEA0sUQ==",
+  "success": true,
+  "projectFilePath": "D:\\PlayGround\\HoloMotoOriginalUI\\OriginalUITools-for-HoloLens-\\Assets\\HoloMotoTools.Dependencies.msb4u.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Holomoto\\.nuget\\packages\\msbuildforunity\\0.9.1-123842\\msbuildforunity.0.9.1-123842.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

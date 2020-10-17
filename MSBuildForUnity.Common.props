@@ -2,9 +2,9 @@
   
   <!-- These are specific to this Unity project and can't be overridden -->
   <PropertyGroup>
-    <UnityProjectAssetsPath>D:\Apps\HoloMotoTools\Assets</UnityProjectAssetsPath>
+    <UnityProjectAssetsPath>D:\PlayGround\HoloMotoOriginalUI\OriginalUITools-for-HoloLens-\Assets</UnityProjectAssetsPath>
     
-    <_MSBuildForUnityGeneratedOutputDirectory>D:\Apps\HoloMotoTools\MSBuild</_MSBuildForUnityGeneratedOutputDirectory>
+    <_MSBuildForUnityGeneratedOutputDirectory>D:\PlayGround\HoloMotoOriginalUI\OriginalUITools-for-HoloLens-\MSBuild</_MSBuildForUnityGeneratedOutputDirectory>
     <MSBuildForUnityGeneratedProjectDirectory>$(_MSBuildForUnityGeneratedOutputDirectory)\Projects</MSBuildForUnityGeneratedProjectDirectory>
   </PropertyGroup>
   
@@ -18,12 +18,12 @@
     
     <MSBuildForUnityDefaultOutputPath>$(UnityProjectAssetsPath)\Dependencies</MSBuildForUnityDefaultOutputPath>
     
-    <UnityCurrentPlatform>WSA</UnityCurrentPlatform>
-    <UnityCurrentTargetFramework>net46</UnityCurrentTargetFramework>
+    <UnityCurrentPlatform>WindowsStandalone64</UnityCurrentPlatform>
+    <UnityCurrentTargetFramework>netstandard2.0</UnityCurrentTargetFramework>
     
-    <UnityMajorVersion>2019</UnityMajorVersion>
-    <UnityMinorVersion>2</UnityMinorVersion>
-    <UnityEditorInstallPath>C:\Program Files\Unity\Hub\Editor\2019.2.9f1\Editor</UnityEditorInstallPath>
+    <UnityMajorVersion>2020</UnityMajorVersion>
+    <UnityMinorVersion>1</UnityMinorVersion>
+    <UnityEditorInstallPath>C:\Program Files\Unity\Hub\Editor\2020.1.8f1\Editor</UnityEditorInstallPath>
   </PropertyGroup>
   
   <PropertyGroup>
