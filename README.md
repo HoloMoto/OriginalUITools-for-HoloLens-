@@ -18,7 +18,7 @@ https://www.youtube.com/watch?v=-UEzbbM8wvU
 
 
 
- ・Unity 2019.2.9f1
+ ・Unity 2020.1.8f1
 
  
 
