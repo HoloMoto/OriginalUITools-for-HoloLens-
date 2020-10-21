@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Microsoft.MixedReality.Toolkit.Utilities;
 using Microsoft.MixedReality.Toolkit.Input;
-using Microsoft.MixedReality.Toolkit.OpenVR.Headers;
+
 
 public class HandDetectVisualizer : MonoBehaviour
 {

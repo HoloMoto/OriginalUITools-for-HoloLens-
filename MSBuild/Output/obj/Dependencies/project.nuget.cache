@@ -1,17 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "IetwaHYVnoshQx/yqmwUn1t2jPec1sxXg62jDDvmp1OfDyQXHV2p6SVPB90ATMALND09dpFPOgpyqVcOhpRNyQ==",
+  "dgSpecHash": "HgAKR2WPrV0eKiRNAEdzCkZeOzpQ+gKuFueMxCi4RSk1guNQnC2WUWZmtUHz4/TeWwGr+/UgdshOqhjb7TAnuQ==",
   "success": true,
   "projectFilePath": "D:\\PlayGround\\HoloMotoOriginalUI\\OriginalUITools-for-HoloLens-\\Assets\\HoloMotoTools.Dependencies.msb4u.csproj",
   "expectedPackageFiles": [
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Holomoto\\.nuget\\packages\\microsoft.windows.mixedreality.dotnetwinrt\\0.5.1049\\microsoft.windows.mixedreality.dotnetwinrt.0.5.1049.nupkg.sha512",
     "C:\\Users\\Holomoto\\.nuget\\packages\\msbuildforunity\\0.9.1-123842\\msbuildforunity.0.9.1-123842.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\Holomoto\\.nuget\\packages\\system.drawing.primitives\\4.3.0\\system.drawing.primitives.4.3.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.runtime.extensions\\4.3.0\\system.runtime.extensions.4.3.0.nupkg.sha512"
+    "C:\\Users\\Holomoto\\.nuget\\packages\\system.drawing.primitives\\4.3.0\\system.drawing.primitives.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }
