@@ -5,7 +5,14 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/UITools/Experimental/DialTest/DialTest.unity
     guid: 7f52aa96f8a662947b8d191d12761f8e
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/UITools/Experimental/HandMene/HandDetect/HandDetectAreaVisualizer.unity
+    guid: 2d581f841bde31b4280fb14e3e555cfb
+  m_configObjects:
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 924f374f21cd9714cbb9163dfa8cd789,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 51c0aa57add0f654fb155a3a6301698d,
+      type: 2}
