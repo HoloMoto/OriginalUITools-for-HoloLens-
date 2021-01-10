@@ -130,6 +130,7 @@
       },
       "frameworks": {
         "net46": {
+          "targetAlias": "net46",
           "projectReferences": {}
         }
       },
@@ -141,6 +142,7 @@
     },
     "frameworks": {
       "net46": {
+        "targetAlias": "net46",
         "dependencies": {
           "Microsoft.Windows.MixedReality.DotNetWinRT": {
             "suppressParent": "Analyzers",
@@ -148,7 +150,7 @@
             "version": "[0.5.1049, )"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
